@@ -6,8 +6,6 @@ else
     printLoop(Integer.parseInt(args[0]));
       
  }
- 
-
 
 public static  void printLoop(int n)
 {for  (int i = 1; i <= n; i++)
