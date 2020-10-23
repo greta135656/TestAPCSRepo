@@ -64,3 +64,4 @@ cols = rand.nextInt(cols) + 1;
 	}
 	
 }
+    
