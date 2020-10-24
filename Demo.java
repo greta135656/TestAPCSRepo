@@ -40,21 +40,21 @@ Random rand = new Random();
 	return arr;
 	}
     
-    public static int[][] create2DArrayRandomized (int rows, int cols, int maxValue)
+public static int[][] create2DArrayRandomized (int rows, int cols, int maxValue)
 	{
 Random rand = new Random();
-cols = rand.nextInt(cols) + 1;
-
-	int [][] arr = new int [rows][cols];
+	int originalcols = cols;
+	int [][] arr = new int [rows][];
 	for (int x = 0; x < rows; x++)
 		{
+		cols = rand.nextInt(originalcols);
+		arr[x] = new int[cols];
 		for (int y = 0; y < cols; y++)
 			{
-			arr[x][y] = rand.nextInt(maxValue + 1);
+			arr[x][y] = rand.nextInt(maxValue);
 			}
 		}
 	return arr;
-	}
-	
-}
+	}}
+    
     
