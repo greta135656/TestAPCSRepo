@@ -17,9 +17,10 @@ public static String arrayDeepToString (int [][] arr) {
     String new1 = "{";
 for (int i = 0; i < arr.length; i++)
 {new1  += arrToString(arr[i]);
+if (arr.length>1 && i < arr.length -1) {
  new1 += ", ";
 
-}
+}}
 
 new1 += "}";
 return new1;
